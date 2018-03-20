@@ -20,9 +20,9 @@ class SearchBar extends Component {
   onFormSubmit(event) {
     event.preventDefault();
 
-    // We need to go and fetch weather data
+    // go and fetch weather data
     this.props.fetchWeather(this.state.term); // calls action creator
-    this.setState({ term: '' }); // clears term after submit
+    this.setState({ term: '' }); // clears search term after submit
   }
 
   render() {
